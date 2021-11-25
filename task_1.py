@@ -12,7 +12,7 @@ import numpy as np
 # use for loop for scraping all pages
 
 final = pd.DataFrame()
-for j in range(1, 3)
+for j in range(1, 3):
 # Getting URL
     webpage = requests.get('https://www.midsouthshooterssupply.com/dept/reloading/primers?currentpage={}'.format(j)).text
     soup = BeautifulSoup(webpage, 'lxml')
